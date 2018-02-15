@@ -9,6 +9,9 @@ import stripe.example.api.ApiModule;
 import stripe.example.data.DataModule;
 import stripe.example.service.ServiceModule;
 
+/**
+ * Starts the stripe-example application.
+ */
 public class Main {
 
     public static void main(String... args) throws Exception {
