@@ -1,4 +1,12 @@
 # stripe-example
+An example of integrating [Stripe](https://www.stripe.com) payments with a web application.
+
+## Prerequisites
+
+## Running the Example
+
+## Bugs and Feedback
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/stripe-example/issues).
 
 ## License
 MIT License
