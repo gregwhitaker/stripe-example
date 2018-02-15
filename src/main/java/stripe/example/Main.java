@@ -6,6 +6,7 @@ import ratpack.server.BaseDir;
 import ratpack.server.RatpackServer;
 import stripe.example.api.ApiEndpoints;
 import stripe.example.api.ApiModule;
+import stripe.example.config.DatabaseConfig;
 import stripe.example.data.DataModule;
 import stripe.example.service.ServiceModule;
 
@@ -19,8 +20,7 @@ public class Main {
                 .serverConfig(c -> c
                         .yaml("config.yaml")
                         .env()
-//                        .require("/auth", AuthConfig.class)
-//                        .require("/database", DatabaseConfig.class)
+                        .require("/database", DatabaseConfig.class)
                         .baseDir(BaseDir.find())
                         .build()
                 )
