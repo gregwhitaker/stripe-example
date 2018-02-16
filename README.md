@@ -10,7 +10,7 @@ instructions below.
 
 1. Start the example can be run using the following Gradle command:
 
-    $ RATPACK_STRIPE__PUBLISH_KEY={stripe publish key} RATPACK_STRIPE__SECRET_KEY={stripe secret key} ./gradlew run
+        $ RATPACK_STRIPE__PUBLISH_KEY={stripe publish key} RATPACK_STRIPE__SECRET_KEY={stripe secret key} ./gradlew run
     
 2. Once the application has started, point your web browser to [http://localhost:5050](http://localhost:5050) to access the test page.
 
