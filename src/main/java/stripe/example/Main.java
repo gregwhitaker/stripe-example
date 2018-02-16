@@ -1,12 +1,12 @@
 package stripe.example;
 
 import com.github.gregwhitaker.ratpack.error.ErrorModule;
+import ratpack.groovy.template.TextTemplateModule;
 import ratpack.guice.Guice;
 import ratpack.server.BaseDir;
 import ratpack.server.RatpackServer;
 import stripe.example.api.ApiEndpoints;
 import stripe.example.api.ApiModule;
-import stripe.example.config.DatabaseConfig;
 import stripe.example.config.StripeConfig;
 import stripe.example.data.DataModule;
 import stripe.example.service.ServiceModule;
@@ -30,11 +30,12 @@ public class Main {
                         .module(ErrorModule.class)
                         .module(ApiModule.class)
                         .module(ServiceModule.class)
+                        .module(TextTemplateModule.class)
                         .module(DataModule.class))
                 )
                 .handlers(chain -> chain
                         .insert(ApiEndpoints.class)
-                        .files(f -> f.dir("public").indexFiles("checkout.html"))
+                        .files(f -> f.dir("templates").indexFiles("index.html"))
                 )
         );
     }

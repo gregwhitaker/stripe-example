@@ -1,13 +1,13 @@
 package stripe.example.service;
 
 import com.google.inject.AbstractModule;
-import stripe.example.service.checkout.CheckoutService;
-import stripe.example.service.checkout.StripeCheckoutService;
+import stripe.example.service.order.OrderService;
+import stripe.example.service.order.InMemoryOrderService;
 
 public class ServiceModule extends AbstractModule {
 
     @Override
     protected void configure() {
-        bind(CheckoutService.class).to(StripeCheckoutService.class);
+        bind(OrderService.class).to(InMemoryOrderService.class);
     }
 }

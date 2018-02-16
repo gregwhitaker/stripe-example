@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stripe Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="nav-container">
+</div>
+
+<div class="main-container">
+    <section>
+        <div class="container">
+            <div class="product-single">
+                <div class="row mb24 mb-xs-48">
+                    <div class="col-md-5 col-sm-6">
+                        <div class="image-slider slider-thumb-controls controls-inside">
+                            <span class="label">Sale</span>
+                            <ul class="slides">
+                                <li>
+                                    <img alt="Image" src="img/shop-product-4.jpg">
+                                </li>
+                                <li>
+                                    <img alt="Image" src="img/shop-product-4_1.jpg">
+                                </li>
+                                <li>
+                                    <img alt="Image" src="img/shop-product-4_2.jpg">
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 col-md-offset-1 col-sm-6">
+                        <div class="description">
+                            <h4 class="uppercase">Logan - Sturdy Canvas Black Backpack</h4>
+                            <div class="mb32 mb-xs-24">
+                                <span class="number price old-price">$149.95</span>
+                                <span class="number price">$119.95</span>
+                            </div>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                            </p>
+                            <ul>
+                                <li><strong>SKU:</strong> 8660</li>
+                            </ul>
+                        </div>
+                        <hr class="mb48 mb-xs-24">
+                        <form action="order" method="POST" class="add-to-cart">
+                            <input type="hidden" name="sku" value="8660">
+                            <input type="submit" value="Buy Now">
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/flexslider.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
