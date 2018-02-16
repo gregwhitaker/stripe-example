@@ -7,11 +7,14 @@ set of API keys you will receive a `Publishable Key` and a `Secret Key` that are
 instructions below.
 
 ## Running the Example
-The example can be run using the following Gradle command:
+
+1. Start the example can be run using the following Gradle command:
 
     $ RATPACK_STRIPE__PUBLISH_KEY={stripe publish key} RATPACK_STRIPE__SECRET_KEY={stripe secret key} ./gradlew run
     
-Once the application has started, point your web browser to [http://localhost:5050](http://localhost:5050) to access the test page.
+2. Once the application has started, point your web browser to [http://localhost:5050](http://localhost:5050) to access the test page.
+
+3. Click the `Pay with Card` button and use the information for one of the [Stripe Test Credit Cards](https://stripe.com/docs/testing#cards) to complete the transaction.
 
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/stripe-example/issues).
