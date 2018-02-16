@@ -10,6 +10,9 @@ import java.util.Map;
 
 import static ratpack.groovy.Groovy.groovyTemplate;
 
+/**
+ * Handler responsible for displaying the checkout page.
+ */
 public class CheckoutEndpoint implements Handler {
 
     @Inject

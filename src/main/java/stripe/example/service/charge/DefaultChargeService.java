@@ -11,6 +11,9 @@ import stripe.example.config.StripeConfig;
 
 import java.util.Map;
 
+/**
+ * Service responsible for charging the card using Stripe.
+ */
 @Singleton
 public class DefaultChargeService implements ChargeService {
 

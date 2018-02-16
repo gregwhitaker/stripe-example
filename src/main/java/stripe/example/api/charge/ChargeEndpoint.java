@@ -1,18 +1,19 @@
 package stripe.example.api.charge;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Maps;
 import com.google.inject.Inject;
 import ratpack.form.Form;
 import ratpack.handling.Context;
 import ratpack.handling.Handler;
-import ratpack.jackson.Jackson;
 import stripe.example.service.charge.ChargeService;
 
 import java.util.Map;
 
 import static ratpack.groovy.Groovy.groovyTemplate;
 
+/**
+ * Handler responsible for charging the card.
+ */
 public class ChargeEndpoint implements Handler {
 
     @Inject
