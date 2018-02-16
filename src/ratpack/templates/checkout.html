@@ -1,15 +1,25 @@
 <html>
     <head>
-        <title>Stripe Example</title>
+        <title>Checkout | Stripe Example</title>
+        <style>
+            body {
+                font-family: 'arial';
+            }
+            #checkout-form input,
+            #checkout-form button {
+                display: block;
+                margin: 12px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Stripe Example</h1>
-        <br>
-        <form action="checkout" method="POST">
+        <label>Price: <span>${model.price}</span></label>
+        <form action="charge" method="POST">
+            <input type="hidden" value="${model.amount}" name="amount" />
             <script
                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="pk_test_V18i1albxJdTeDF0hEUU2Yh2"
-                    data-amount="999"
+                    data-key="${model.stripeKey}"
+                    data-amount="${model.amount}"
                     data-name="Example Checkout"
                     data-description="Example Charge"
                     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"

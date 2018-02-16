@@ -8,7 +8,6 @@ import ratpack.server.RatpackServer;
 import stripe.example.api.ApiEndpoints;
 import stripe.example.api.ApiModule;
 import stripe.example.config.StripeConfig;
-import stripe.example.data.DataModule;
 import stripe.example.service.ServiceModule;
 
 /**
@@ -22,7 +21,6 @@ public class Main {
                         .yaml("config.yaml")
                         .env()
                         .require("/stripe", StripeConfig.class)
-                        .require("/database", DatabaseConfig.class)
                         .baseDir(BaseDir.find())
                         .build()
                 )
@@ -30,8 +28,7 @@ public class Main {
                         .module(ErrorModule.class)
                         .module(ApiModule.class)
                         .module(ServiceModule.class)
-                        .module(TextTemplateModule.class)
-                        .module(DataModule.class))
+                        .module(TextTemplateModule.class))
                 )
                 .handlers(chain -> chain
                         .insert(ApiEndpoints.class)

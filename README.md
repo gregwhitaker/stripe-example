@@ -6,7 +6,7 @@ An example of integrating [Stripe](https://www.stripe.com) payments with a web a
 ## Running the Example
 The example can be run using the following Gradle command:
 
-    $ ./gradlew run
+    $ RATPACK_STRIPE__PUBLISH_KEY={stripe publish key} RATPACK_STRIPE__SECRET_KEY={stripe secret key} ./gradlew run
 
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/stripe-example/issues).

@@ -1,8 +1,8 @@
 package stripe.example.api;
 
 import com.google.inject.AbstractModule;
+import stripe.example.api.charge.ChargeEndpoint;
 import stripe.example.api.checkout.CheckoutEndpoint;
-import stripe.example.api.order.OrderEndpoint;
 
 public class ApiModule extends AbstractModule {
 
@@ -11,6 +11,6 @@ public class ApiModule extends AbstractModule {
         bind(ApiEndpoints.class);
 
         bind(CheckoutEndpoint.class);
-        bind(OrderEndpoint.class);
+        bind(ChargeEndpoint.class);
     }
 }
