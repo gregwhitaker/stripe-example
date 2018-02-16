@@ -1,4 +1,6 @@
 # stripe-example
+[![Build Status](https://travis-ci.org/gregwhitaker/stripe-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/stripe-example)
+
 An example of integrating [Stripe](https://www.stripe.com) payments with a web application.
 
 ## Prerequisites
