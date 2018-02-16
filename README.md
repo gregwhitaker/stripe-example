@@ -1,7 +1,7 @@
 # stripe-example
 [![Build Status](https://travis-ci.org/gregwhitaker/stripe-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/stripe-example)
 
-An example of integrating [Stripe](https://www.stripe.com) payments with a web application.
+An example of charging a credit card via the [Stripe](https://www.stripe.com) API.
 
 ## Prerequisites
 This example requires that you create a [Stripe](https://www.stripe.com) account with a set of API keys. When you create a new
